@@ -1,0 +1,12 @@
+{
+    "id": "sgx3-2026-nathandf-vm-test",
+    "description": "Test system",
+    "systemType": "LINUX",
+    "host": "sgx3.cloud.tacc",
+    "effectiveUserId":"${apiUserId}",
+    "defaultAuthnMethod": "PASSWORD",
+    "rootDir": "/",
+    "canExec": true,
+    "jobRuntimes": [ { "runtimeType": "DOCKER" } ],
+    "jobWorkingDir": "HOST_EVAL($HOME)/"
+  }

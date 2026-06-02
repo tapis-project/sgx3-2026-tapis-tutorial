@@ -1,0 +1,12 @@
+{
+    "name": "test2",
+    "appId": "sgx3-2026.test2",
+    "appVersion": "0.2",
+    "execSystemId": "sgx3testsystem",
+    "parameterSet": {
+    "appArgs": [
+        {"arg": "--text 'I am happy today'"}
+
+        ]
+    }
+}

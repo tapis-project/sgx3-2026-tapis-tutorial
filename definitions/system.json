@@ -1,0 +1,39 @@
+{
+    "tenant": "tacc",
+    "id": "sgx3testsystem",
+    "systemType": "LINUX",
+    "owner": "nathandf",
+    "host": "sgx3.tacc.cloud",
+    "enabled": true,
+    "effectiveUserId": "nathandf",
+    "defaultAuthnMethod": "PASSWORD",
+    "rootDir": "/",
+    "port": -1,
+    "useProxy": false,
+    "proxyPort": 0,
+    "canExec": true,
+    "canRunBatch": false,
+    "enableCmdPrefix": false,
+    "allowChildren": false,
+    "jobRuntimes": [
+      {
+        "runtimeType": "SINGULARITY"
+      }
+    ],
+    "jobWorkingDir": "HOST_EVAL($HOME)",
+    "jobEnvVariables": [],
+    "jobMaxJobs": 2147483647,
+    "jobMaxJobsPerUser": 2147483647,
+    "batchLogicalQueues": [],
+    "jobCapabilities": [],
+    "tags": [],
+    "notes": {},
+    "uuid": "7b53b467-37c0-4469-a721-8786f75efaeb",
+    "deleted": false,
+    "created": "2026-06-01T19:00:36.973383Z",
+    "updated": "2026-06-02T00:06:29.536795Z",
+    "hasCredentials": true,
+    "isPublic": false,
+    "isDynamicEffectiveUser": false,
+    "sharedWithUsers": []
+  }
