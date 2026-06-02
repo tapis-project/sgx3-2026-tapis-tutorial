@@ -56,15 +56,15 @@ For more information about applications and the Applications service please see 
 
 ## Getting Started
 
-Here we review how to create an application and how to retrieve application details. In the examples below we assume you are using the tenant named ``training`` with a base URL of ``https://training.tacc.tapis.io`` and that you have authenticated using ``tapipy``.
+Here we review how to create an application and how to retrieve application details. In the examples below we assume you are using the tenant named ``tacc`` with a base URL of ``https://tacc.tapis.io`` and that you have authenticated using ``tapipy``.
 
 ### Creating an Application
 
 Here is an example of an application definition:
-``` python
-app_def = {
-    "id": app_id,
-    "version": "0.2",
+``` json
+{
+    "id": "sgx3-2026.test2",
+    "version": "0.1.0",
     "description": "Application utilizing the sentiment analysis model from Hugging Face.",
     "jobType": "FORK",
     "runtime": "DOCKER",
@@ -72,7 +72,7 @@ app_def = {
     "jobAttributes": {
         "parameterSet": {
             "archiveFilter": {
-                "includeLaunchFiles": False
+                "includeLaunchFiles": false
             }
         },
         "memoryMB": 1,
@@ -87,7 +87,7 @@ app_def = {
 ``` python
  import json
  from tapipy.tapis import Tapis
- t = Tapis(base_url='https://training.tapis.io', username='<userid>', password='************')
+ t = Tapis(base_url='https://tacc.tapis.io', username='<userid>', password='************')
  t.apps.createAppVersion(**app_def)
 ```
 
