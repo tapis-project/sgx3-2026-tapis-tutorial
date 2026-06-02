@@ -1,0 +1,19 @@
+{
+    "id": "sgx3-2026.test2",
+    "version": "0.1.0",
+    "description": "Application utilizing the sentiment analysis model from Hugging Face.",
+    "jobType": "FORK",
+    "runtime": "DOCKER",
+    "containerImage": "tapis/sentiment-analysis:1.0.0",
+    "jobAttributes": {
+        "parameterSet": {
+            "archiveFilter": {
+                "includeLaunchFiles": false
+            }
+        },
+        "memoryMB": 1,
+        "nodeCount": 1,
+        "coresPerNode": 1,
+        "maxMinutes": 10
+    }
+}

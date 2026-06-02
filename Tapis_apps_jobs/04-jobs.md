@@ -64,16 +64,16 @@ attached to any argument.<br/>
 ```
 #Submit job to run the sentiment analysis application
 pa= {
+    "name": "sentiment-analysis",
     "parameterSet": {
-    "appArgs": [
-            {"arg": "--sentences"},
-            {"arg": "\"This is great\" \"This is not fun\""}
-            
+        "appArgs": [
+            {"arg": "--text 'I am happy today'"}
         ]
-    }}
+    }
+}
 
 # Submit a job
-job_response_vm=client.jobs.submitJob(name='sentiment analysis',description='sentiment analysis with hugging face transformer pipelines',appId=app_id,appVersion='0.1',execSystemId=system_id_vm, **pa)
+job_response_vm=client.jobs.submitJob(name='sentiment analysis',description='sentiment analysis with hugging face transformer pipelines',appId=app_id,appVersion=app_version,execSystemId=system_id_vm, **pa)
 
 
 ```
